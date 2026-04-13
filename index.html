@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover" />
+  <title>Tilt Pop</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="app">
+    <section class="hud">
+      <div class="hud-pill"><span class="hud-label">Punkte</span><span id="score" class="hud-value">0</span></div>
+      <div class="hud-pill"><span class="hud-label">Combo</span><span id="combo" class="hud-value">x1</span></div>
+      <div class="hud-pill"><span class="hud-label">Zeit</span><span id="timer" class="hud-value">2:00</span></div>
+    </section>
+
+    <section class="board-wrap">
+      <div id="boardShell" class="board-shell">
+        <div id="board" class="board" aria-label="Tilt Pop board"></div>
+      </div>
+      <div id="overlay" class="overlay">
+        <div class="overlay-card">
+          <div id="overlayTitle" class="overlay-title">Tilt Pop</div>
+          <p id="overlayText" class="overlay-text">Die kommenden Steine stehen direkt an den Seiten des Spielfelds und werden beim Drehen mitgenommen.</p>
+          <button id="restartBtn" class="primary-btn">Start</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="controls">
+      <button id="leftBtn" class="control-btn">⟲</button>
+      <button id="rightBtn" class="control-btn">⟳</button>
+    </section>
+  </main>
+
+  <script src="game.js"></script>
+</body>
+</html>
